@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap");
+
+body {
+    font-family: "Antic Didone", serif;
+    font-size: 0.95rem;
+    background-color: #e8dbd7;
+}
+
+h2 {
+    color: #545454;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    margin-bottom: 2rem;
+}
+
+.content-container {
+    margin: 6.25rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* ------------------------- Navigation bar--------------------*/
+
+.logo {
+    
+    font-size: 2rem;
+    color: #545454;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.logo-link:hover {
+    text-decoration: none;
+}
+
+.logo-link:active {
+    text-decoration: none;
+}
+
+.navbar {
+    margin-top: 0;
+    background-color: #e8dbd7;
+    max-width: 100%;
+    height: 5rem;
+    
+}
+
+.nav-link {
+    color: #545454 !important;
+    font-size: 1.2rem;
+}
+
+.navbar-collapse {
+    padding-right: 1rem;
+    text-align: right;
+}
+
+/*--------------------------About section------------------------*/
+
+.about-col {
+    padding: 0 3rem 3rem;
+}
+
+.about-col-text {
+    margin-top: 3rem;
+    color: #545454;
+}
+
+.about-self-img {
+    height: 40%;
+    width: 40%;
+    float: left;
+    margin: 2.5rem;
+    border-radius: 50%;
+    /*Credit for making text wrap image in circular shape: https://css-tricks.com/almanac/properties/s/shape-outside/*/
+    shape-outside: circle(50%);
+}
+
+/* Credit for responsive circular images, keeping their shape: https://stackoverflow.com/questions/35336298/responsive-circular-images*/
+.circular-responsive-img {
+    position: relative;
+    border-radius: 50%;
+    width: 12.5rem;
+    height: 12.5rem;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.first-img-container {
+    top: 2.5rem;
+    left: 1.25rem;
+}
+
+.second-img-container {
+    bottom: 2.5rem;
+    left: 1.25rem;
+}
+
+.third-img-container {
+    top: 4.5rem;
+}
+
+#first-about-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#second-about-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#third-about-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*-------------------------------Gallery------------------------------*/
+
+.gallery-container {
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0.125rem;
+    width: 100%;
+}
+
+.gallery-container img {
+    width: 100%;
+}
+
+/*------------------------------Price section------------------------*/
+
+.price-container {
+    color: #545454;
+}
+
+.price-container h5 {
+    font-size: large;
+    font-weight: 600;
+}
+
+/*------------------------------Contact section----------------------*/
+
+/* Credit for overlay, idea and implementation: Mentor Akshat Garg */
+.overlay {
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+}
+
+/* Credit for making the background-image transparent while text and image elements on top remain non-transparent: https://css-tricks.com/non-transparent-elements-inside-transparent-elements/*/
+
+.background-container {
+    background: url("../images/contact-bg.jpg") no-repeat;
+    background-size: cover;
+    padding-bottom: 55rem;
+    opacity: 0.7;
+
+}
+
+.contact-container {
+    position: relative;
+    margin-top: -55rem;
+    padding: 2.5rem;
+    height: 55rem;
+    display: flex;
+    align-items: center;
+    
+}
+/*
+.contact-container h4 {
+    color: #fcffe2;
+    margin-bottom: 2.5rem;
+}
+*/
+
+form {
+    background-color: rgba(255, 255, 255, 0.808);
+    width: 50%;
+    padding: 2rem 0;
+    border-radius: 2rem;
+}
+
+form h3 {
+    font-size: 1.5rem;
+    
+}
+
+.form-group {
+    color: #fff;
+    padding: 0 4rem;
+    margin: 1.25rem 0;
+}
+
+.form-control {
+    background-color: rgba(248, 247, 247, 0.8);
+}
+
+label {
+  color: #545454;
+  position: left;
+}
+
+.form-send-btn {
+    background-color: #545454;
+    color: #fff;
+   margin: auto;
+}
+
+.form-send-btn:hover {
+    color: #fcffe2;
+}
+/*
+.contact-customerquote {
+    color: #fcffe2;
+    font-size: 1.2rem;
+    font-style: italic;
+}*/
+
+/*--------------------------------Footer-------------------------------*/
+
+.footer {
+   
+    text-align: center;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: #545454;
+    margin-top: 0.625rem;
+}
+
+.social-icon {
+    font-size: 1.8rem;
+    margin: 2.5rem 0.625rem 1.25rem;
+    color: #545454;
+}
+
+/* Credit for transition code making the button larger on hover, and smaller on hover off: https://css-tricks.com/different-transitions-for-hover-on-hover-off/*/
+.cta-btn {
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    border-radius: 50%;
+    background-color: #fbfcf2;
+    padding: 1.25rem;
+    z-index: 1;
+    transition: padding 1s;
+}
+
+.cta-btn:hover {
+    padding: 1.75rem;
+    transition: padding 1s;
+}
+
+.cta-btn i {
+    text-decoration: none;
+    font-size: 4rem;
+    color: #545454;
+    transition: font-size 1s;
+}
+
+.cta-btn i:hover {
+    font-size: 5rem;
+    transition: font-size 1s;
+}
+
+/* ----------------------------------------Media queries-----------------------------*/
+
+@media screen and (max-width: 770px) {
+    .logo {
+        font-size: 2rem;
+        left: 0.625rem;
+        top: 0.625rem;
+    }
+
+    .gallery-container {
+        column-count: 3;
+        margin-bottom: 3rem;
+    }
+
+    .background-container {
+        padding-bottom: 55rem;
+    }
+
+    .contact-container {
+        margin-top: -53rem;
+        height: 53rem;
+    }
+
+    .form-group {
+        padding: 0 2rem;
+    }
+
+    .contact-customerquote {
+        font-size: 0.9rem;
+    }
+
+    .cta-btn {
+        bottom: 1.25rem;
+        right: 1.25rem;
+        padding: 0.75rem;
+        transition: padding 1s;
+    }
+
+    .cta-btn:hover {
+        padding: 1rem;
+        transition: padding 1s;
+    }
+
+    .cta-btn i {
+        font-size: 3rem;
+        transition: font-size 1s;
+    }
+
+    .cta-btn i:hover {
+        font-size: 3.5rem;
+        transition: font-size 1s;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .logo {
+        margin: 0.625rem 0.3125rem;
+    }
+
+    .heading {
+        font-size: 1.3rem;
+    }
+
+    .navbar {
+        padding: 0 0.5rem;
+    }
+
+    .content-container {
+        margin: 2.5rem 0;
+    }
+
+    .about-col {
+        padding: 0 1.5rem;
+    }
+
+    .about-self-img {
+        float: none;
+        height: 60%;
+        width: 60%;
+        margin-top: 0;
+    }
+
+    .about-col-text {
+        margin-top: 1.25rem;
+    }
+
+    .gallery-container {
+        column-count: 2;
+        margin-bottom: 1.25rem;
+        padding: 1.5rem 0;
+    }
+
+    .cta-btn {
+        padding: 0.5rem;
+        transition: padding 1s;
+    }
+
+    .cta-btn:hover {
+        padding: 0.75rem;
+        transition: padding 1s;
+    }
+
+    .cta-btn i {
+        font-size: 2.75rem;
+        transition: font-size 1s;
+    }
+
+    .cta-btn i:hover {
+        font-size: 3rem;
+        transition: font-size 1s;
+    }
+}
