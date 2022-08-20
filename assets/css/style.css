@@ -14,8 +14,12 @@ h2 {
     margin-bottom: 2rem;
 }
 
+p {
+    color: #545454;
+}
+
 .content-container {
-    margin: 6.25rem 0;
+    padding: 3rem 0;
     text-align: center;
     width: 100%;
 }
@@ -64,19 +68,14 @@ h2 {
     padding: 0 3rem 3rem;
 }
 
-.about-col-text {
-    margin-top: 3rem;
-    color: #545454;
-}
 
-.about-self-img {
+.about-self-img { 
     height: 40%;
     width: 40%;
     float: left;
     margin: 2.5rem;
     border-radius: 50%;
-    /*Credit for making text wrap image in circular shape: https://css-tricks.com/almanac/properties/s/shape-outside/*/
-    shape-outside: circle(50%);
+   
 }
 
 /* Credit for responsive circular images, keeping their shape: https://stackoverflow.com/questions/35336298/responsive-circular-images*/
@@ -281,6 +280,9 @@ label {
         top: 0.625rem;
     }
 
+    .about-self-img {
+        float: none;
+    }
     .gallery-container {
         column-count: 3;
         margin-bottom: 3rem;
@@ -348,7 +350,6 @@ label {
     }
 
     .about-self-img {
-        float: none;
         height: 60%;
         width: 60%;
         margin-top: 0;

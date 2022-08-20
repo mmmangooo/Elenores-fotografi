@@ -1,154 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elenores fotografi</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
     <link rel="icon" href="favicon.png" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <!--Header section-->
     <header id="header">
-      <!--Used Bootstrap navigation bar because it is an easy way to obtain clean, functioning and responsive navigation-->
-      <nav class="navbar navbar-expand-lg navbar-light ml-auto fixed-top">
-        <a class="logo-link" href="#header"
-          ><h1 class="logo">Elenores fotografi</h1></a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <!--Used Bootstrap navigation bar because it is an easy way to obtain clean, functioning and responsive navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light ml-auto fixed-top">
+            <a class="logo-link" href="#header">
+                <h1 class="logo">Elenores fotografi</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#header"
-                >Hem <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">Om mig</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#gallery">Galleri</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Kontakt</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#header">Hem <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Om mig</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Galleri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-      <!--Used Bootstrap carousel because it provides an easy way to display several images and also provides necessary javascript-->
-      <div
-        id="carouselLandscape"
-        class="carousel slide carousel-fade d-none d-md-block carousel-container"
-        data-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="./assets/images/header-carousel-baby.jpg"
-              class="d-block w-100 carousel-img"
-              alt="Happy baby sitting in orange leaves."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./assets/images/header-carousel-woman-under-tree.jpg"
-              class="d-block w-100 carousel-img"
-              alt="Pregnant woman standing under tree, looking into the distance"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./assets/images/header-carousel-woman-in-field.jpg"
-              class="d-block w-100 carousel-img"
-              alt="Pregnant woman standing in field looking down at her belly."
-            />
-          </div>
+        <!--Used Bootstrap carousel because it provides an easy way to display several images and also provides necessary javascript-->
+        <div id="carouselLandscape" class="carousel slide carousel-fade d-none d-md-block carousel-container"
+            data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/images/header-carousel-baby.jpg" class="d-block w-100 carousel-img"
+                        alt="Happy baby sitting in orange leaves." />
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/header-carousel-woman-under-tree.jpg" class="d-block w-100 carousel-img"
+                        alt="Pregnant woman standing under tree, looking into the distance" />
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/header-carousel-woman-in-field.jpg" class="d-block w-100 carousel-img"
+                        alt="Pregnant woman standing in field looking down at her belly." />
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div
-        id="carouselMobile"
-        class="carousel slide carousel-fade d-block d-md-none"
-        data-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="./assets/images/mobile-carousel-woman-in-woods.jpg"
-              class="d-block w-100 carousel-img"
-              alt="Pregnant standing in woods with branches in the foreground."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./assets/images/mobile-carousel-woman-orange.jpg"
-              class="d-block w-100 carousel-img"
-              alt="Pregnant woman standing in forest with orange leaves in the foreground."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./assets/images/mobile-carousel-baby.jpg"
-              class="d-block w-100 carousel-img"
-              alt="Baby sitting on orange leaves, touching them with his hand."
-            />
-          </div>
+        <div id="carouselMobile" class="carousel slide carousel-fade d-block d-md-none" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/images/mobile-carousel-woman-in-woods.jpg" class="d-block w-100 carousel-img"
+                        alt="Pregnant standing in woods with branches in the foreground." />
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/mobile-carousel-woman-orange.jpg" class="d-block w-100 carousel-img"
+                        alt="Pregnant woman standing in forest with orange leaves in the foreground." />
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/mobile-carousel-baby.jpg" class="d-block w-100 carousel-img"
+                        alt="Baby sitting on orange leaves, touching them with his hand." />
+                </div>
+            </div>
         </div>
-      </div>
     </header>
 
     <!--About section-->
 
     <section id="about">
-      <div class="content-container container-fluid">
-        <h2 class="heading">Om mig</h2>
-        <div class="row align-items-center">
-          <div class="about-col col-12 col-lg-6">
-            <img
-              class="about-self-img"
-              src="./assets/images/elenore.jpg"
-              alt="The photographer, a dark-blonde woman, looking into the camera, holding her camera"
-            />
+        <div class="content-container container-fluid">
 
-            <p class="about-col-text">
-              Välkommen till min hemsida för personligt familjefoto! För mig är
-              det viktigt att du får ut mer av fotostunden än bara bilder, jag
-              tycker att en fotografering ska vara en rolig upplevelse med
-              känslor och äkthet som syns i bilderna. Det här med att
-              fotografera uppställt och poserat är inte min grej utan jag tar
-              till mina knep för att ni ska fokusera på varandra eller er själva
-              istället för mig. Fotostunden är till för er och mitt mål är att
-              ni ska kunna slappna av och lita på att jag som fotograf förevigar
-              era finaste ögonblick just precis som de är. Så strunta i vinden
-              som tar tag i håret eller regnet som ligger i luften, bortse från
-              fläcken på klänningen och bara längta efter ditt ofödda barn som
-              vilar tryggt i magen eller se din kärlek djupt i ögonen, medan jag
-              tar hand om att föreviga ögonblicket som är livet.
-            </p>
-          </div>
+            <div class="row align-items-center p-3 no-gutters">
+                <div class="col-12 col-md-6 p-lg-5">
+                    <h2 class="heading text-md-left">Om mig</h2>
+                    <p class="text-md-left">
+                        Välkommen till min hemsida för personligt familjefoto! För mig är
+                        det viktigt att du får ut mer av fotostunden än bara bilder, jag
+                        tycker att en fotografering ska vara en rolig upplevelse med
+                        känslor och äkthet som syns i bilderna. Det här med att
+                        fotografera uppställt och poserat är inte min grej utan jag tar
+                        till mina knep för att ni ska fokusera på varandra eller er själva
+                        istället för mig. Fotostunden är till för er och mitt mål är att
+                        ni ska kunna slappna av och lita på att jag som fotograf förevigar
+                        era finaste ögonblick just precis som de är. Så strunta i vinden
+                        som tar tag i håret eller regnet som ligger i luften, bortse från
+                        fläcken på klänningen och bara längta efter ditt ofödda barn som
+                        vilar tryggt i magen eller se din kärlek djupt i ögonen, medan jag
+                        tar hand om att föreviga ögonblicket som är livet.
+                    </p>
+                </div>
+                <div class=" col-12 col-md-6">
+                    <img class="about-self-img" src="./assets/images/elenore.jpg"
+                        alt="The photographer, a dark-blonde woman, looking into the camera, holding her camera" />
+
+                </div>
+                <!--
           <div class="about-img-col d-none d-lg-block col-lg-6">
             <div class="circular-responsive-img first-img-container">
               <img
@@ -174,179 +135,149 @@
               />
             </div>
           </div>
+          -->
+            </div>
         </div>
-      </div>
+    </section>
+
+
+    <!-- Price section-->
+
+    <section>
+        <div class="content-container price-container bg-light py-3">
+
+
+
+            <div class="row no-gutters">
+                <div class="col-12 col-md-6">
+                    <div class="container h-100 d-none d-md-block">
+                    <div class="row no-gutters h-100 mt-5 pt-3">
+                        <div class="col align-self-top text-right pt-3 pr-2">
+                    <img class="circular-responsive-img" src="./assets/images/womanblackandwhite.jpg"
+                    alt="Black and white photo of a a dark haired pregnant woman dressed in white, looking down over her shoulder." />
+                </div>
+                <div class="col align-self-center pb-3"><img class="circular-responsive-img" src="./assets/images/couplewithbaby.jpg"
+                        alt="Black and white photo of a couple, holding a baby in between them. They look at their baby with smiles." />
+                    </div>
+                </div>
+                </div>
+            </div>
+                <div class="col-12 col-md-6 p-3">
+                    <h2 class="heading text-md-left"> Priser</h2>
+                    <p class="text-md-left">I alla paket ingår konsultation med tips gällande exempelvis kläder och plats,
+                        lån av klänning om så önskas, 60 minuters fotografering på valfri plats i Stockholm och tillgång
+                        till webgalleri med bilder för urval.</p>
+                        <div class="row no-gutters">
+                    <div class="col-12 col-md-6">
+                        <h5 class="my-5">Gravidfotografering </h5>
+
+                        <p class="font-italic">Paket 1:</p>
+
+                        <ul class="list-unstyled mb-5">
+
+                            <li>15 högupplösta bilder digitalt </li>
+                            <li>4000 Kronor </li>
+                        </ul>
+
+
+                        <p class="font-italic">Paket 2:</p>
+                        <ul class="list-unstyled">
+
+                            <li>10 högupplösta bilder digitalt </li>
+                            <li>2500 Kronor </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h5 class="my-5">Familj- eller parfotografering </h5>
+                        <p>
+                            <span class="font-italic">Paket 1:</span>
+                        <ul class="list-unstyled mb-5">
+
+                            <li>25 högupplösta bilder digitalt </li>
+                            <li>3000 Kronor </li>
+                        </ul>
+
+                        <p class="font-italic">Paket 2:</p>
+                        <ul class="list-unstyled">
+
+
+                            <li>15 högupplösta bilder digitalt </li>
+                            <li>2000 Kronor </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!--Gallery section-->
 
     <section id="gallery">
-      <div class="content-container">
-        <h2 class="heading">Galleri</h2>
-        <div class="gallery-container container-fluid">
-          <img
-            src="./assets/images/womanonbeach.jpg"
-            alt="Pregnant woman dressed in white, standing on sunset beach holding her tummy and looking into the camera"
-          />
-          <img
-          src="./assets/images/blondewomanonbeach.jpg"
-          alt="Pregnant woman dressed in blue, standing on beach holding her tummy and looking down"
-        />
-        <img
-        src="./assets/images/womanonbeach2.jpg"
-        alt="Pregnant woman dressed in white, standing on sunset beach holding her tummy and looking down"
-      />
-          <img
-          src="./assets/images/lookingovershoulder.jpg"
-          alt="Pregnant woman dressed in white, standing under trees in evening light, holding her tummy and looking over her shoulder"
-        />
-        <img
-        src="./assets/images/womaninwhite.jpg"
-        alt="Pregnant woman dressed in white, standing in sunset woods holding her tummy"
-      />
-      <img
-      src="./assets/images/sunintheeyes.jpg"
-      alt="Pregnant woman dressed in white, standing in sunset woods holding her tummy and facing the sun with closed eyes"
-    />
-    <img
-      src="./assets/images/womanautumnleaves.jpg"
-      alt="Pregnant woman dressed in black, standing behind orange autumn leaves, looking down"
-    />
-    <img
-      src="./assets/images/womankissingbaby.jpg"
-      alt="Sepia colored image of a woman holding a baby, kissing its forehead"
-    />
-    <img
-      src="./assets/images/newborn.jpg"
-      alt="Black and white image of newborn baby sleeping on its tummy on its mom's chest"
-    />
-          <img
-            src="./assets/images/coupleinautumn.jpg"
-            alt="Man standing behind woman, embracing her and looking down, woman looking into camera"
-          />
-          <img
-      src="./assets/images/girlinwoods.jpg"
-      alt="Blonde girl standing on one leg on some logs in th woods, smiling big"
-    />
-    <img
-      src="./assets/images/dadholdingbaby.jpg"
-      alt="Baby in its dad's lap, dad holding its head towards the camera"
-    />
-    <img
-    src="./assets/images/babyinautumnleaves.jpg"
-    alt="Baby sitting in orange autumn leaves, smiling"
-  />
-    
+        <div class="content-container bg-light py-5 px-3">
+            <h2 class="heading text-md-left">Galleri</h2>
+            <p class="text-md-left">Klicka på bilden för förstoring.</p>
+            <div class="gallery-container no-gutters">
+                <img src="./assets/images/womanonbeach.jpg"
+                    alt="Pregnant woman dressed in white, standing on sunset beach holding her tummy and looking into the camera" />
+                <img src="./assets/images/blondewomanonbeach.jpg"
+                    alt="Pregnant woman dressed in blue, standing on beach holding her tummy and looking down" />
+                <img src="./assets/images/womanonbeach2.jpg"
+                    alt="Pregnant woman dressed in white, standing on sunset beach holding her tummy and looking down" />
+                <img src="./assets/images/lookingovershoulder.jpg"
+                    alt="Pregnant woman dressed in white, standing under trees in evening light, holding her tummy and looking over her shoulder" />
+                <img src="./assets/images/womaninwhite.jpg"
+                    alt="Pregnant woman dressed in white, standing in sunset woods holding her tummy" />
+                <img src="./assets/images/sunintheeyes.jpg"
+                    alt="Pregnant woman dressed in white, standing in sunset woods holding her tummy and facing the sun with closed eyes" />
+                <img src="./assets/images/womanautumnleaves.jpg"
+                    alt="Pregnant woman dressed in black, standing behind orange autumn leaves, looking down" />
+                <img src="./assets/images/womankissingbaby.jpg"
+                    alt="Sepia colored image of a woman holding a baby, kissing its forehead" />
+                <img src="./assets/images/newborn.jpg"
+                    alt="Black and white image of newborn baby sleeping on its tummy on its mom's chest" />
+                <img src="./assets/images/coupleinautumn.jpg"
+                    alt="Man standing behind woman, embracing her and looking down, woman looking into camera" />
+                <img src="./assets/images/girlinwoods.jpg"
+                    alt="Blonde girl standing on one leg on some logs in th woods, smiling big" />
+                <img src="./assets/images/dadholdingbaby.jpg"
+                    alt="Baby in its dad's lap, dad holding its head towards the camera" />
+                <img src="./assets/images/babyinautumnleaves.jpg" alt="Baby sitting in orange autumn leaves, smiling" />
+
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- Price section-->
-
-    <section>
-      <div class="content-container price-container">
-        <h2 class="heading"> Priser</h2>
-        <div class="container">
-        <div class="row">
-        <div class="col-12 col-md-6">
-          <h5 class="my-5">Gravidfotografering  </h5>
-          
-          <p class="font-italic">Paket 1:</p>
-          
-            
-
-          <ul class="list-unstyled mb-5">
-            <li>Konsultation med tips gällande exempelvis kläder och plats</li> 
-            <li>60 minuter fotografering på valfri plats i Stockholm </li> 
-            <li> Lån av klänning om du önskar </li>
-            <li>Tillgång till webbgalleri med bilder för urval </li>
-            <li>15 högupplösta bilder digitalt </li> 
-             <li>4000 Kronor </li>
-           </ul>
-        
-          
-          <p class="font-italic">Paket 2:</p> 
-          <ul class="list-unstyled">
-         <li>Konsultation med tips gällande exempelvis kläder och plats</li> 
-         <li>60 minuter fotografering på valfri plats i Stockholm </li> 
-         <li> Lån av klänning om du önskar </li>
-         <li>Tillgång till webbgalleri med bilder för urval </li>
-         <li>10 högupplösta bilder digitalt </li> 
-          <li>2500 Kronor </li>
-        </ul>
-        </div>
-        <div class="col-12 col-md-6">
-          <h5 class="my-5">Familj- eller parfotografering </h5>
-          <p>
-            <span class="font-italic">Paket 1:</span>
-            <ul class="list-unstyled mb-5">
-              <li>Konsultation med tips gällande exempelvis kläder och plats</li> 
-              <li>60 minuter fotografering på valfri plats i Stockholm </li> 
-              <li> Lån av klänning om du önskar </li>
-              <li>Tillgång till webbgalleri med bilder för urval </li>
-              <li>25 högupplösta bilder digitalt </li> 
-               <li>3000 Kronor </li>
-             </ul>
-        
-          <p class="font-italic">Paket 2:</p>
-          <ul class="list-unstyled">
-            <li>Konsultation med tips gällande exempelvis kläder och plats</li> 
-            <li>60 minuter fotografering på valfri plats i Stockholm </li> 
-            <li> Lån av klänning om du önskar </li>
-            <li>Tillgång till webbgalleri med bilder för urval </li>
-            <li>15 högupplösta bilder digitalt </li> 
-             <li>2000 Kronor </li>
-           </ul>
-     </div>
-        </div>
-      </div>
-    </section>
     <!--Contact section-->
     <section id="contact">
-      <div class="overlay">
-        <div class="background-container"></div>
-        <div class="contact-container">
-      
+        <div class="overlay">
+            <div class="background-container"></div>
+            <div class="contact-container">
 
-              <form>
-                <h3>Välkommen att kontakta mig!</h3>
-                <div class="form-group">
-                  <label for="inputName">Namn</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="inputName"
-                    aria-describedby="inputName"
-                    placeholder="Ditt namn"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="inputEmail">Epost</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="inputEmail"
-                    aria-describedby="inputEmail"
-                    placeholder="Din epostadress"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="inputText">Meddelande</label>
-                  <textarea
-                    class="form-control"
-                    id="inputText"
-                    rows="6"
-                    placeholder="Skriv ditt meddelande här"
-                    required
-                  ></textarea>
-                </div>
 
-                <button type="submit" class="btn form-send-btn">Skicka</button>
-              </form>
-      
-          <!-- <div class="col-12 col-md-6">
+                <form>
+                    <h3>Välkommen att kontakta mig!</h3>
+                    <div class="form-group">
+                        <label for="inputName">Namn</label>
+                        <input type="text" class="form-control" id="inputName" aria-describedby="inputName"
+                            placeholder="Ditt namn" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail">Epost</label>
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="inputEmail"
+                            placeholder="Din epostadress" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="inputText">Meddelande</label>
+                        <textarea class="form-control" id="inputText" rows="6" placeholder="Skriv ditt meddelande här"
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn form-send-btn">Skicka</button>
+                </form>
+
+                <!-- <div class="col-12 col-md-6">
               <p class="contact-customerquote">
                 "Förutom ett fantastiskt slutresultat med jättefina bilder, var
                 det vi uppskattade mest med Elenore hennes varma och hjärtliga
@@ -357,42 +288,35 @@
                 graviditeter. Jag tycker inte om att stå framför kameran, men
                 Elenore fick mig att känna mig både bekväm och vacker!"
               </p>
-            </div>--> 
-    
+            </div>-->
+
+            </div>
         </div>
-      </div>
     </section>
 
     <!--Footer section-->
     <footer class="container-fluid footer">
-      <a href="https://www.instagram.com/elenoresfoton/" target="_blank"
-        ><i class="social-icon fab fa-instagram"></i
-      ></a>
-      <a href="https://co.pinterest.com/evaelenore/" target="_blank"
-        ><i class="social-icon fab fa-pinterest-p"></i
-      ></a>
+        <a href="https://www.instagram.com/elenoresfoton/" target="_blank"><i
+                class="social-icon fab fa-instagram"></i></a>
+        <a href="https://co.pinterest.com/evaelenore/" target="_blank"><i
+                class="social-icon fab fa-pinterest-p"></i></a>
 
-      <p class="copyright">© Copyright Elenore Henriksson 2022</p>
+        <p class="copyright">© Copyright Elenore Henriksson 2022</p>
 
-      <div class="cta-btn">
-        <a href="#contact"><i class="fas fa-camera"></i></a>
-      </div>
+        <div class="cta-btn">
+            <a href="#contact"><i class="fas fa-camera"></i></a>
+        </div>
     </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
