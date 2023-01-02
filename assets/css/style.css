@@ -18,9 +18,7 @@ p {
     color: #545454;
 }
 
-.content-container {
-    padding: 3rem 0;
-    text-align: center;
+.content-container { 
     width: 100%;
 }
 
@@ -61,6 +59,14 @@ p {
     padding-right: 1rem;
     text-align: right;
 }
+
+/*-------------------------- Carousel --------------------------*/
+
+.carousel-mobile {
+    height: 500px;
+    width: 100vw;
+}
+
 
 /*--------------------------About section------------------------*/
 
@@ -157,7 +163,7 @@ p {
 /* Credit for making the background-image transparent while text and image elements on top remain non-transparent: https://css-tricks.com/non-transparent-elements-inside-transparent-elements/*/
 
 .background-container {
-    background: url("../images/contact-bg.jpg") no-repeat;
+    background: url("../images/siblingsinwoods.jpg") no-repeat;
     background-size: cover;
     padding-bottom: 55rem;
     opacity: 0.7;
@@ -169,8 +175,6 @@ p {
     margin-top: -55rem;
     padding: 2.5rem;
     height: 55rem;
-    display: flex;
-    align-items: center;
     
 }
 /*
@@ -182,13 +186,13 @@ p {
 
 form {
     background-color: rgba(255, 255, 255, 0.808);
-    width: 50%;
     padding: 2rem 0;
     border-radius: 2rem;
 }
 
 form h3 {
     font-size: 1.5rem;
+    text-align: center;
     
 }
 
@@ -206,6 +210,7 @@ label {
   color: #545454;
   position: left;
 }
+
 
 .form-send-btn {
     background-color: #545454;
@@ -326,6 +331,10 @@ label {
         font-size: 3.5rem;
         transition: font-size 1s;
     }
+
+    .overlay {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -359,10 +368,17 @@ label {
         margin-top: 1.25rem;
     }
 
+   .price-container h5 {
+       font-size: medium;
+   }
     .gallery-container {
         column-count: 2;
         margin-bottom: 1.25rem;
         padding: 1.5rem 0;
+    }
+
+    form h3 {
+        font-size: 1.2rem;
     }
 
     .cta-btn {
@@ -383,5 +399,9 @@ label {
     .cta-btn i:hover {
         font-size: 3rem;
         transition: font-size 1s;
+    }
+
+    .overlay {
+        width: 100%;
     }
 }
